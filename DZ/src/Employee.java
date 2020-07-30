@@ -2,7 +2,7 @@ public class Employee {
     private String personalName;
     private String ocupation;
     private String eMail;
-    private long phoneNumber;
+    private Long phoneNumber;
     private int salary;
     private int age;
 
@@ -34,7 +34,7 @@ public class Employee {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -46,7 +46,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getAge() {
+    public int getAge(int age) {
         return age;
     }
 
@@ -56,13 +56,20 @@ public class Employee {
 
     public Employee () {};
 
-    public Employee (String personalName, String ocupation, String eMail, long phoneNumber, int salary, int age) {
+    public Employee (String personalName, String ocupation, String eMail, Long phoneNumber, int salary, int age) {
+        this.personalName = personalName;
+        this.ocupation = ocupation;
+        this.eMail = eMail;
+        this.phoneNumber = phoneNumber;
+        this.salary = salary;
+        this.age = age;
 
     }
 
     public void showInfo () {
         System.out.println(String.format("Employee info: [%s][%s][%s][%s][%s][%s]", personalName, ocupation, eMail, phoneNumber, salary, age));
     }
+
 
 
     @Override
