@@ -46,7 +46,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getAge(int age) {
+    public int getAge() {
         return age;
     }
 
@@ -54,7 +54,7 @@ public class Employee {
         this.age = age;
     }
 
-    public Employee () {};
+    public Employee () {}
 
     public Employee (String personalName, String ocupation, String eMail, Long phoneNumber, int salary, int age) {
         this.personalName = personalName;

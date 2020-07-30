@@ -11,16 +11,17 @@ public class Employee_Data {
         employee[2].showInfo();
         employee[3].showInfo();
         employee[4].showInfo();
-        showOldAged();
+        showOldAged(employee);
 
 
     }
 
-    public void showOldAged(Employee [] employee) {
-        for (int i = 0; i < 4; i++) {
-            employee[i].getAge();
-            if (employee[i].age > 40) {
-                System.out.println(employee[i].age);
+    public static void showOldAged(Employee [] employee) {//1. В данном случае employee - это массив?
+        for (int i = 0; i < employee.length - 1; i++) {
+            int a = employee[i].getAge();//2. get может работать только через присвоение переменной? или есть другие варианты?
+            String b = employee[i].getPersonalName();
+            if (a > 40) {
+                System.out.println(String.format("[%s] is [%s] years old",b,a));
             }
         }
     }
