@@ -1,11 +1,11 @@
 public abstract class Animal {
     protected int obstacleLength;
-    protected long obstacleHeight;
+    protected float obstacleHeight;
     protected String name;
 
     public Animal () {}
 
-    public Animal (int obstacleLength, long obstacleHeight, String name) {
+    public Animal (int obstacleLength, float obstacleHeight, String name) {
         this.obstacleLength = obstacleLength;
         this.obstacleHeight = obstacleHeight;
         this.name = name;
@@ -16,7 +16,7 @@ public abstract class Animal {
         return obstacleLength;
     }
 
-    public long getObstacleHeight() {
+    public float getObstacleHeight() {
         return obstacleHeight;
     }
 
@@ -35,7 +35,7 @@ public abstract class Animal {
 
     public abstract void swim (int obstacleLength);
 
-    public abstract void jump (long obstacleHeight);
+    public abstract void jump (float obstacleHeight);
 
     public abstract void run (int obstacleLength);
 
