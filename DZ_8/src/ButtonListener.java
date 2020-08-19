@@ -19,11 +19,13 @@ public class ButtonListener implements ActionListener {
             sb.append(inputField.getText()).append(jButton.getText());//Как это работает?
             String search = sb.toString();
             inputField.setText(search);
-            if (search.contains("-")) {
+            /*if (search.contains("-")) {
                 String deleteAll = jButton.getText().replaceAll("-","0");
                 result = Integer.parseInt(search.replaceAll("-","0")) - Integer.parseInt(deleteAll);
                 System.out.println(result);
             }
+
+             */
       //  }
         /*String a = jButton.getText();
         if (jButton.getText().equals("+")) {
